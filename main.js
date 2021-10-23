@@ -1,7 +1,8 @@
 const LinksSocialMedia = {
   github: 'jonhnatalima',
   instagram: 'jonhnatatima',
-  twitter: 'JonhnataLima'
+  twitter: 'JonhnataLima',
+  linkedin: 'in/jonhnata-lima/'
 }
 
 function changeSocialMediaLinks() {
@@ -9,6 +10,10 @@ function changeSocialMediaLinks() {
     const social = li.getAttribute('class')
 
     li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
+
+    if (LinksSocialMedia[social] === undefined) {
+      li.setAttribute('hidden', 'hidden')
+    }
   }
 }
 
