@@ -18,9 +18,10 @@ body {
 }
 
 main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(images/background-1.svg) no-repeat center/cover;
+  width: 100vw; /*viewport - pega a largura da viewport/100. Será ocupado 100 partes da viewport*/
+  min-height: 812px;
+  height: 100vh; /*viewport - pega a altura da viewport/100. Será ocupado 100 partes da altura de viewport*/
 }
 
 .container {
