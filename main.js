@@ -22,7 +22,7 @@ function getGitHubProfileInfos() {
     .then(data => {
       userTitle.textContent = `${data.name} - DoWhile 2021`
       userName.textContent = data.name
-      //userBio.textContent = data.bio
+      userBio.textContent = data.bio
       userLink.href = data.html_url
       UserImage.src = data.avatar_url
       userLogin.textContent = data.login
