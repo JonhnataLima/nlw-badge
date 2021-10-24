@@ -18,7 +18,7 @@ body {
 }
 
 main {
-  background: url(images/background-1.svg) no-repeat center/cover;
+  background: url(./images/background.svg) no-repeat center/cover;
   width: 100vw; /*viewport - pega a largura da viewport/100. Será ocupado 100 partes da viewport*/
   min-height: 812px;
   height: 100vh; /*viewport - pega a altura da viewport/100. Será ocupado 100 partes da altura de viewport*/
@@ -82,7 +82,106 @@ ul {
   padding: 0;
 
   display: flex; /*Informa que tem um eixo principal... Caso queria mudar o direcionamento do eixo, usar flex-direction*/
-  gap: 0.5rem; /*24 / 16 = 0.5rem | Coloca espaço entre as imagens*/
+  gap: 0.5rem; /*8 / 16 = 0.5rem | Coloca espaço entre as imagens*/
 
   justify-content: center; /*centraliza novamente*/
+}
+/*
+@media (min-width: 720px) {
+}
+*/
+@media (min-width: 960px) {
+  /* estilos versão desktop */
+
+  body {
+    /*display: grid;
+    place-items: center;
+    background-color: #121214;
+    background-image: url(./images/background-desktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    */
+    background: url(./images/images-desktop/background.svg) no-repeat
+      center/cover;
+    width: 100vw;
+    min-height: 820px;
+    height: 100vh;
+  }
+
+  main {
+    background: url(images/images-desktop/background-badge-rope-clasp.svg)
+      no-repeat center/cover;
+  }
+  /*
+    width: 358px;
+    height: 560px;
+    background: url(./images/background-desktop-complete.png);
+    background-size: 358px 560px;
+    */
+
+  .rope {
+  }
+  .container {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--grey);
+  }
+
+  .avatar {
+    width: 10rem; /*160 / 16 = 10rem*/
+    margin: 11.5rem auto 0; /*184 / 16 = 11.5rem*/
+
+    position: relative; /*Informando o limite para position de `.avatar span` referente ao property `top`.*/
+  }
+
+  .avatar span {
+    position: absolute; /*Sobrepor/empilhar imagens*/
+    top: -15px;
+    z-index: 1; /*indicando o nível de profundidade que essa imagem tem em relação a outra.*/
+  }
+
+  .avatar > img {
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+
+    clip-path: polygon(0 25%, 50% 2%, 100% 25%, 98% 75%, 50% 100%, 0 75%);
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem; /*24 / 16 = 1.5rem*/
+  }
+
+  a {
+    color: var(--grey);
+    text-decoration: none;
+
+    margin-top: 0.25rem;
+
+    display: flex;
+    gap: 0.75rem; /*12 / 16 = 0.75rem*/
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    margin-top: 2rem;
+  }
+
+  ul {
+    margin-top: 2.5rem;
+
+    list-style: none; /* retira o estilo de marcação*/
+    padding: 0;
+
+    display: flex; /*Informa que tem um eixo principal... Caso queria mudar o direcionamento do eixo, usar flex-direction*/
+    gap: 0.5rem; /*8 / 16 = 0.5rem | Coloca espaço entre as imagens*/
+
+    justify-content: center; /*centraliza novamente*/
+  }
 }
