@@ -1,7 +1,7 @@
 const LinksSocialMedia = {
   github: 'jonhnatalima',
-  instagram: 'jonhnatatima',
-  twitter: 'JonhnataLima',
+  instagram: 'jonhnatalima/',
+  twitter: 'JonhnataLima/',
   linkedin: 'in/jonhnata-lima/'
 }
 
